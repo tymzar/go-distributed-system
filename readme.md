@@ -23,6 +23,13 @@ Idea for this system is to achieve a fault-tolerant, fast, scalable and secure s
                     v
                +---------+
                |         |
+               |  Envoy  |
+               |         |
+               +----+----+ 
+                    |
+                    v
+               +---------+
+               |         |
                +  Broker +
                |         |
                +----+----+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package hello;
+option go_package = "github.com/tymzar/go-distributed-system/proto/hello";
+
+
+service HelloService {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+}
+
+message CreateRequest {
+  string name = 1;
+}
+
+message CreateResponse {
+  string message = 1;
+}
